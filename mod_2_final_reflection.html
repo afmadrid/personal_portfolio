@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Module 2 - Network and Information Security Management</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">MsC Cybersecurity</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+							<li><a href="mod_1.html">Module 1</a></li>
+							<li><a href="mod_2.html">Module 2</a></li>
+							<li><a href="generic.html">Module 3</a></li>
+							<li><a href="generic.html">Module 4</a></li>
+							<li><a href="generic.html">Module 5</a></li>
+							<li><a href="generic.html">Module 6</a></li>
+							<li><a href="generic.html">Module 7</a></li>
+							<li><a href="generic.html">Module 8</a></li>
+							<li><a href="generic.html">Module 9</a></li>
+							<li><a href="generic.html">Module 10</a></li>
+							<li><a href="generic.html">Extras</a></li>							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Networks and information Security Management – Final Reflection.</h1>
+							<br/>
+							<p>During this module the topic networks and information security management was reviewed. Information security management can be defined as discipline that not only manages technologies, but also people and processes. To ensure security people and processes should be adapted and educated to security measures. Understanding fundamental concepts of networks and their history is important because personal data that travels through the internet uses them. Confidentiality, Integrity, and Availability (CIA) are important components that any secure system must preserve and protect (Campbell, 2016). Confidentiality refers that the information should not be available for unauthorized individuals or organisations. Integrity means that the information delivered must be accurate and complete. Availability means that the information should be available whenever it is requested. A four element was discussed in the module named non-Repudiation which must warranty that traceability to an action or event cannot be negated.</p>
+							<p>As demonstrated during the analysis of the case of study about how a medical mannequin was compromised, today more than ever security measures should be implemented because not only big networks and financial companies are affected by cyberthreats. Medical devices can be considered as IoT devices that connect with other devices or networks. Due to its limitations of storage and processing power they could be more vulnerable, adding the facts that fewer standard practices exist to build hardware and software for these types of devices. In the medical industry if a medical device is compromised personal data of patients and personal can be disclosed to unauthorized organisations or individuals.</p>
+							<p>One interesting topic reviewed during the module was the history behind the adoption of the TCP/IP standard rather than the OSI model. Some of the main success factors for the adoption of the TCP/IP standard was the flexibility and rapid adaptability to changes. As discussed on the article “rough consensus and running code” even if the model OSI was proposed by ISO and was a more descriptive representation of a network system. The slow time it took to be implemented and bureaucracy surrounding it make people to move forward to a faster paced standard (Russell, 2006).</p>
+							<p>GDPR regulations were discussed by analysing cases of study where solutions were not easy to identify and propose. These regulations were stablished in Europe in 2018 and were mandated to be followed with the intention of protecting personal data. Right of access and security by design are concepts described on the GDPR acts. The former refers that anyone should have the right to access its personal information that has been recollected by an organisation (GDPR (a), 2022) and the last refers to the implementation security requirements in processes and products from the beginning through the entire duration of its development life cycle (GDPR (b), 2022).</p>
+							<p>Definitely one of the most practical and useful topics to understand the responsibilities of a security expert was the scanning exercise performed as part of the final project. For scanning vulnerabilities on the assigned website 5 tools were chosen and the Linux partition Kali Linux was utilised. This Linux partition offered the advantage that it already had installed built-in tools for cybersecurity scanning, and it could be used as a virtualized environment with just the use of a hypervisor (Bhatt, 2018). On the first part of this project security regulations used by the web site and probable vulnerabilities to be found were hypothesised. In the second part next tools were used to perform the scan on the website:</p>
+							<ul>
+								<li>Owasp Zap. This tool performed a very complete automated scan where multiple http requests were sent detecting all the components that conformed the website and presented a list of found vulnerabilities categorizing them by severity using different colours. Additional information such as vulnerability description and suggested mitigation actions were presented. The automated scan with this tool last for around 30 minutes and it was noticed that the router IP address was blocked by the targeted website firewall. Using a VPN was a workaround used to continue scanning exercises with other tools.</li>
+								<li>Burp Suite was used to perform a passive scan a community version of this tool. The passive scan allowed to configure the burp suite tool as a proxy and intercept all the requests done by the website. Every time an element or link was clicked on the website folders and files were registered representing the folders and files structures of the web site.</li>
+								<li>The third tool Skipfish started an automated scan and was manually stopped after 10 minutes. With this scan multiple vulnerabilities were found, and a html report was generated allowing a better analysis of the results.</li>
+								<li>Nikto was another tool used which performed a simple scan in the website lasting for no more than 10 minutes. After finishing a list of vulnerabilities found was displayed.</li>
+								<li>Finally, the last scanning tools used was Nmap, this a commonly known scanning tool because it gives information about the opened ports found for the website and the approximated operating system on which the website server is running.</li>
+							</ul>
+							<p>After the scans were performed it was possible to compare the vulnerabilities found on the website by each of the tools. Most of the vulnerabilities were categorized with medium, low and very low severity. One medium categorized vulnerability was the JSLibrary vulnerability which referred as the use of an outdated version of this library on one of the website components a mitigation strategy proposed is improving practices that would guaranty that used libraries and software components are constantly updated or even stop using JavaScript which is considered as an insecure language. Other lower severity vulnerabilities such as the Absence of anti-CSRF tokens, Cookie no HTTP Only Flag, Cookie without same site attribute were proposed to be mitigated by following better practices when building the website.</p>
+							<br/>
+							<p>References:</p>
+							<p>Campbell, T. (2016) Practical Information Security Management. 1st ed. APRESS.</p>
+							<p>GDPR (a) (2022) Recital 63 – Right of access. Available from: https://gdpr.eu/Recital-63-Right-of-access/ [Accessed: 5 February 2022].</p>
+							<p>GDPR (b) (2022) Art. 25 GDPR Data protection by design and by default. Available from: https://gdpr.eu/article-25-data-protection-by-design/ [Accessed: 5 February 2022].</p>
+							<p>Russell, A.L. (2006) ‘Rough Consensus and Running Code’ and the Internet-OSI Standards War. IEEE Annals of the History of Computing.</p>
+							<p>Bhatt, D. (2018) Modern Day Penetration Testing Distribution Open Source Platform - Kali Linux - Study Paper. International Journal of Scientific & Technology Research 7(4): 233-237.</p>
+						</div>
+					</div>				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Contact Information</h2>
+								<ul class="icons">
+									<li><i href="#" class="fa solid style2 fa-phone-alt"><span class="label"> (52) 5583697843</span></i></li>
+									<br />
+									<li><i href="#" class="fa solid style2 fa-envelope"><span class="label"> afmadridh@gmail.com</span></i></li>
+									<br />								
+									<li><i href="#" class="fab brands style2 fa-github"><span class="label"> afmadrid.github.io/msc-eportfolio/ </span></i></li>
+									<br />
+									<li><i href="#" class="fab solid style2 fa-linkedin"><span class="label"> linkedin.com/in/aldo-madrid-76683593</span></i></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

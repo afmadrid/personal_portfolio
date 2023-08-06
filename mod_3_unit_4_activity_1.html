@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Module 3 - Secure Software Development</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">MsC Cybersecurity</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+							<li><a href="mod_1.html">Module 1</a></li>
+							<li><a href="mod_2.html">Module 2</a></li>
+							<li><a href="mod_3.html">Module 3</a></li>
+							<li><a href="generic.html">Module 4</a></li>
+							<li><a href="generic.html">Module 5</a></li>
+							<li><a href="generic.html">Module 6</a></li>
+							<li><a href="generic.html">Module 7</a></li>
+							<li><a href="generic.html">Module 8</a></li>
+							<li><a href="generic.html">Module 9</a></li>
+							<li><a href="generic.html">Module 10</a></li>
+							<li><a href="generic.html">Extras</a></li>							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Exploring the Cyclomatic Complexity’s Relevance Today</h1>
+							<br/>
+							<p>Cyclomatic complexity is a metric that can be used to measure the complexity of a program. Complexity is calculated by considering all the possible independent paths that can be traversed from start to finish (Pillai, 2017).</p>
+							<p>Cyclomatic complexity can be a useful metric used by developers to have a good approximation of complexity of code being developed. Managers can find this metric useful because it can help them to predict the necessary resources it will take to maintain functionalities of the system (Ferrer et al., 2012).</p>
+							<p>One weakness of cyclomatic complexity is that it does includes complexity added by nested conditionals or other pieces of code such as classes (Ferrer et al., 2012).</p>
+							<p>McCabe cyclomatic complexity is measured by using the control flow graph of a code. Nodes represent the blocks inside the program and edges represent flow from one block of code to another (Ferrer et al., 2012).</p>
+							<p>According to Pillai, 2017, McCabe cyclomatic complexity can be expressed as:</p>
+							<span class="image_center"><img src="images/mccabe_expression.png" alt="" /></span>
+							<p><center>Figure 1. McCabe Cyclomatic Complexity.</center></p>
+							<p>Next example shows the calculation of cyclomatic complexity with a source code and control flow graph example.</p>
+							<span class="image_center"><img src="images/cyclomatic_comp_example.png" alt="" /></span>
+							<p><center>Figure 2. Example of cyclomatic complexity calculation.</center></p>
+							<p>Studies have found strong positive correlation between the cyclomatic complexity and defects in code: the higher the complexity, the larger the number of faults. In addition, it has been found a connection between complexity and difficulty to understand software (Ferrer et al., 2012).</p>
+							<p>In conclusion, cyclomatic complexity should continue to be used as a metric for developers, testers and managers to understand in which parts of the program more resources and efforts may be foucused. Though cyclomatic complexity does not directly enforces security of a program, understanding high cyclomatic complexity values in specific parts of the code may improve security by placing more testing efforts in exercising paths that may contain vulnerabilities in more complex parts of the program. This understanding could also help by reducing code coupling and increasing its cohesion, so the code is easier to reutilize, maintain and implement additional security features.</p>
+							<br/>
+							<h2>References:</h2>
+							<p>Pillai, A.B. (2017) Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd.</p>
+							<p>Ferrer, J., Francisco, C. and Enrique, A. (2012) Estimating Software Testing Complexity. Information and Software Technology.</p>
+						</div>
+					</div>				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Contact Information</h2>
+								<ul class="icons">
+									<li><i href="#" class="fa solid style2 fa-phone-alt"><span class="label"> (52) 5583697843</span></i></li>
+									<br />
+									<li><i href="#" class="fa solid style2 fa-envelope"><span class="label"> afmadridh@gmail.com</span></i></li>
+									<br />								
+									<li><i href="#" class="fab brands style2 fa-github"><span class="label"> afmadrid.github.io/msc-eportfolio/ </span></i></li>
+									<br />
+									<li><i href="#" class="fab solid style2 fa-linkedin"><span class="label"> linkedin.com/in/aldo-madrid-76683593</span></i></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

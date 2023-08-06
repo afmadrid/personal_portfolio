@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Module 3 - Secure Software Development</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">MsC Cybersecurity</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+							<li><a href="mod_1.html">Module 1</a></li>
+							<li><a href="mod_2.html">Module 2</a></li>
+							<li><a href="mod_3.html">Module 3</a></li>
+							<li><a href="generic.html">Module 4</a></li>
+							<li><a href="generic.html">Module 5</a></li>
+							<li><a href="generic.html">Module 6</a></li>
+							<li><a href="generic.html">Module 7</a></li>
+							<li><a href="generic.html">Module 8</a></li>
+							<li><a href="generic.html">Module 9</a></li>
+							<li><a href="generic.html">Module 10</a></li>
+							<li><a href="generic.html">Extras</a></li>							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>What is a Secure Programming Language?</h1>
+							<br/>
+							<p>According to Cifuentes & Bierman, 2019 three of the top vulnerabilities found in main programming languages are:</p>
+							<ul>
+								<li><u>Buffer errors.</u> Buffer overflow errors occur when a predefined memory allocated space or data type allocated space (such as integer and long integer) is overloaded. It can cause overwriting of data and potential corruption of memory beyond the defined buffer boundaries.</li>
+								<li><u>Information leak errors.</u> These errors can be defined as the intentional or unintentional release of information to an untrusted environment. The most common form of information leak error is by disclosing important system information in a way of log files or error messages.</li>
+								<li><u>Injection errors.</u> This type of errors is performed when an attacker tricks a program into accept malicious input, such as data code or system commands and the program does not implement mechanisms to validate inputs. Usually, malicious inputs are in the form of strings that are entered by the user. Subcategories of injection errors are:</li>
+								<ul style="padding-bottom: 0;">
+									<li style="margin-left:2em"><u>Cross-site scripting (XSS).</u> This is a vulnerability that allows attackers to inject malicious code into a website. Three main types of VSS are considered by CWE-79: reflected XSS, stored XSS and DOM-based XSS.</li>
+									<li style="margin-left:2em"><u>SQL injection.</u> This type of injection allows attackers to execute SQL commands on the database which communicates with the application, usually with the intention of disclosing data and tampering/deleting valuable information.</li>
+								</ul>
+							</ul>
+							<p>In Pillai, 2017 some other vulnerabilities included to this list are:</p>
+							<ul>
+								<li><u>Improper access control.</u> Applications should consider giving correct access permissions to the users to avoid exposing information or elevation of privileges.</li>
+								<li><u>Cryptography issues.</u> Level and strength of security should be verified and ascertained via secure protocols or secure mechanisms.</li>
+								<li><u>Race conditions.</u> This error vulnerability can be produced when two processes or actors attempt to reach a particular resource at the same time and the output depends on the correct order of access.</li>
+							</ul>
+							<br/>
+							<h2>Causes of Common Vulnerabilities.</h2>
+							<p>According to Cifuentes & Bierman, 2019 unsecure and incorrect code is not written intentionally. Vulnerable code is written because developers are not provided with adequate mechanisms to support them writing vulnerable-prone code.</p>
+							<ul>
+								<li>Buffer errors are caused because of manual management of pointers.</li>
+								<li>Injection errors are introduced due to interpretation of programming languages of code as input strings.</li>
+								<li>Information leak errors occur due to manual tracking of sensitive data.</li>
+							</ul>
+							<br/>
+							<h2>Abstractions Mechanisms.</h2>
+							<p>Abstractions in programming languages can help developers to avoid performing these errors at the possible cost of a time-consuming learning curve and performance overhead in applications. Success of abstraction mechanisms may depend on the easiness of how they can be used.</p>
+							<p>Next abstractions mechanisms are discussed by Cifuentes & Bierman, 2019:</p>
+							<ul>
+								<li><u>Managed memory.</u> This mechanism is introduced using the concept of garbage collection during runtime of the program. Garbage collection frees the developers of the need to allocate or deallocate memory space manually. Managed memory in some programming domains such as embedded systems is not feasible due to performance overhead.</li>
+								<li><u>Ownership and borrowing.</u> Ownership is a programming pattern employed in C++ where a resource is only assigned one owner. When a resource is transferred via assignment or passing by value the previous owner of the resource cannot access it. Borrowing allows to reference an available resource in a secure manner.</li>
+								<li><u>Language INtegrated Query (LINQ) to SQL.</u> Instead of using string commands to execute SQL operations in a database, frameworks such as LINQ which is implemented in .NET allow to use language implemented functions to perform SQL operations. The disadvantage is that complex SQL operations may not be available.</li>
+								<li><u>Taint tracking.</u> Programming languages such as Ruby implement a taint mode to track external input values and perform taint checks to prevent direct or indirect use of tainted values. Tainted values can include command-line arguments, environment variables, locale information, results of some system class, etc.</li>
+								<li><u>Faceted values.</u> These types of values may help avoiding leak information errors by allowing developers specifying and enforcing policies of the information that is presented to the final viewer.</li>
+							</ul>
+							<br/>
+							<h2>Team Discussion.</h2>
+							<ol>
+								<li>What factors determine whether a programming language is secure or not?</li>
+								<p>Whether a programming a language is secure or not may be determined depending on how capable it is of implement mechanisms against known vulnerabilities.</p>
+								<li>Could Python be classed as a secure language? Justify your answer.</li>
+								<p>According to Cifuentes & Bierman, 2019, no language can be considered secure because they are susceptible to most common vulnerabilities: buffer errors, injection errors and data leak errors.</p>
+								<p>Pillai, 2017 reviews some of the vulnerabilities resolved with the release of Python3 but demonstrates how some of them can be still exploited. Some of these are:</p>
+								<ul style="padding-bottom: 0;">
+									<li style="margin-left:2em">Integer overflow error caused by returning len() values bigger than the space that can be fit into an integer.</li>
+									<li style="margin-left:2em">Core dumped error caused by invoking malicious implementation using the eval() function.</li>
+									<li style="margin-left:2em">Use of unsecure serializing libraries such as pickle which may expose a vulnerability that displays content of root directory where project is stored.</li>
+								</ul>
+								<p>To conclude why Python may not be a secure programming language, next image shows 583 vulnerability records of a search performed in February 2022 at Common Vulnerabilities and Exposures (CVEs) directory (http://cve.mitre.org).</p>
+								<span class="image_center"><img src="images/python_cve_results.png" alt="" /></span>
+								<p><center>Figure 1. Vulnerability records of search performed in February 2022 at CVEs directory (http://cve.mitre.org)</center></p>
+								<li>Python would be a better language to create operating systems than C. Discuss.</li>
+								<p>No, because performance is a key aspect on operating systems. Memory needs to be managed manually which can be done with programming languages such as C and C++.</p>
+							</ol>
+							<br/>
+							<h2>References:</h2>
+							<p>Pillai, A.B. (2017) Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd.</p>
+							<p>Cifuentes, C. & Bierman, G. (2019) What is a Secure Programming Language? 3rd Summit on Advances in Programming Languages (SNAPL).136(3): 1 - 15.</p>
+							<p>CVE. (2022) search Results of Python vulnerabilities. Available: http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=python [Accessed 27 February 2022].</p>
+						</div>
+					</div>				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Contact Information</h2>
+								<ul class="icons">
+									<li><i href="#" class="fa solid style2 fa-phone-alt"><span class="label"> (52) 5583697843</span></i></li>
+									<br />
+									<li><i href="#" class="fa solid style2 fa-envelope"><span class="label"> afmadridh@gmail.com</span></i></li>
+									<br />								
+									<li><i href="#" class="fab brands style2 fa-github"><span class="label"> afmadrid.github.io/msc-eportfolio/ </span></i></li>
+									<br />
+									<li><i href="#" class="fab solid style2 fa-linkedin"><span class="label"> linkedin.com/in/aldo-madrid-76683593</span></i></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>You have passed the following data:</p>
+<table>
+<tr><td>Phrase:</td><td>{{ the_phrase }}</td></tr>
+<tr><td>Letters:</td><td>{{ the_letters }}</td></tr>
+</table>
+
+<p>The search in "{{ the_phrase }}" after "{{ the_letters }}"
+gave the following result:</p>
+<h3>{{ the_results }}</h3>
+
+{% endblock %}
